@@ -215,7 +215,7 @@ select *from customer;
 truncate table customer;
 alter table customer add amount int;
 insert into customer values(&customer_id,'&customer_name',&phone_number,'&ordered_product',&amount);
-select 'Leela' as col1,'bhavya' as col2,'ratna' as col3,'venky' as saras from krishna;--from infowhere last_name=saraswathi;
+select 'Leela' as col1,'bhavya' as col2,'ratna' as col3,'venky' as saras from krishna;--here you have to use dual table because dual is a dummy table provided by oracle
 select 'Leela' as col1,'bhavya' as col2,'ratna' as col3,'venky' as saras from dual;
 select amount+10 as amount+tax from customer;
 select *from customer;
